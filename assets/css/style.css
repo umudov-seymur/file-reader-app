@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #2b65cc;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.upload-card {
+  background-color: #efefef;
+  padding: 45px;
+  border-radius: 8px;
+}
+
+.upload-card .upload-area,
+.upload-card .upload-header {
+  margin-bottom: 28px;
+}
+
+.upload-card form .upload-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 180px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px dashed #2b65cc;
+  padding: 20px 80px;
+  transition: 0.4s;
+  text-align: center;
+}
+
+.upload-card .upload-area.active {
+  border: 2px solid #2b65cc;
+  opacity: 0.7;
+}
+
+.upload-card form .upload-area .upload-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.upload-card form .upload-area .icon {
+  margin-bottom: auto;
+}
+
+.upload-card form .upload-area .icon i {
+  font-size: 65px;
+  color: #2b65cc;
+}
+
+.upload-card .uploaded-area {
+  border-top: 2px solid #ccc;
+  padding: 20px 0;
+}
+
+.upload-card .uploaded-area textarea {
+  outline: none;
+  border: 1px solid #2b65cc;
+  border-radius: 5px;
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 1.5s;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #2b65cc;
+}
+
+.tab-content > .active {
+  animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
